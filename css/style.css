@@ -77,7 +77,31 @@ form label[for=mastercard] {
 /* This is the code you should have students write*/
 /*** BEGIN HERE ***/
 /*Make sure to comment out line 32 above*/
-
+form ol li:first-child{
+border-top-left-radius: 25px;
+border-top-right-radius: 25px;
+}
+form ol li:last-child{
+border-bottom-left-radius: 25px;
+border-bottom-right-radius: 25px;
+padding-bottom: 25px;
+}
+label,input{
+display:block;
+width:85%
+}
+input[type="radio"]{
+width: auto;
+display: inline;
+}
+.form-control{
+width:85%;
+}
+/* This next rule is because the label is a parent rather than a sibling */
+/* I had to use Inspect Element to really figure this out. */
+label .form-control{
+width:100%;
+}
 
 
 
